@@ -15,18 +15,18 @@ const bookSchema = new mongoose.Schema({
     type: String,
     required: [true, "El género literario es obligatorio"],
     enum: [
-      "fantasía",
-      "ciencia ficción",
-      "misterio",
-      "romance",
-      "historia",
-      "terror",
-      "juvenil",
-      "ensayo",
-      "poesía",
-      "aventura",
-      "drama",
-      "biografía"
+      "Fantasía",
+      "Ciencia Ficción",
+      "Misterio",
+      "Romance",
+      "Historia",
+      "Terror",
+      "Juvenil",
+      "Ensayo",
+      "Poesía",
+      "Aventura",
+      "Drama",
+      "Biografía"
     ]
   },
   descripcion: {
@@ -40,6 +40,10 @@ const bookSchema = new mongoose.Schema({
   },
   fechaPublicacion: {
     type: Date
+  },
+  recommended: {
+    type: Boolean,
+    default: false
   }
 }, {
   timestamps: true

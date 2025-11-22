@@ -19,7 +19,7 @@ const userSchema = new mongoose.Schema(
       required: true,
     },
 
-    wishlist: [
+    favorites: [
       {
         type: mongoose.Schema.Types.ObjectId,
         ref: "Book",
