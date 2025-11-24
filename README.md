@@ -65,17 +65,17 @@ project/
 
 ### Géneros permitidos:
 
-- Fantasía"
-- Ciencia Ficción"
-- Misterio"
-- Romance"
-- Historia"
-- Terror"
-- Juvenil"
-- Ensayo"
-- Poesía"
-- Aventura"
-- Drama"
+- Fantasía
+- Ciencia Ficción
+- Misterio
+- Romance
+- Historia
+- Terror
+- Juvenil
+- Ensayo
+- Poesía
+- Aventura
+- Drama
 - Biografía
 
 ---
