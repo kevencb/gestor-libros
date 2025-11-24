@@ -89,10 +89,10 @@ http://localhost:4000/api
 
 ## Autenticación
 
-### **POST /auth/register**  
+**POST /auth/register**  
 Registra un nuevo usuario.
 
-### **POST /auth/login**  
+**POST /auth/login**  
 Devuelve un token JWT y los datos del usuario.
 
 ---
@@ -100,22 +100,22 @@ Devuelve un token JWT y los datos del usuario.
 # Rutas de Libros  
 Base: `/api/books`
 
-### **POST /api/books**  
+**POST /api/books**  
 Crear un libro.
 
-### **GET /api/books**  
+**GET /api/books**  
 Obtener todos los libros.
 
-### **GET /api/books/:id**  
+**GET /api/books/:id**  
 Obtener un libro por ID.
 
-### **PUT /api/books/:id**  
+**PUT /api/books/:id**  
 Actualizar un libro.
 
-### **DELETE /api/books/:id**  
+**DELETE /api/books/:id**  
 Eliminar un libro.
 
-### **GET /api/books/recommended**  
+**GET /api/books/recommended**  
 Obtener solo los libros recomendados.
 
 ---
