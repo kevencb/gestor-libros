@@ -80,14 +80,14 @@ project/
 
 ---
 
-# 📌 Endpoints de la API
+# Endpoints de la API
 
 La URL base es:
 http://localhost:4000/api
 
 ---
 
-## 🔐 Autenticación
+## Autenticación
 
 ### **POST /auth/register**  
 Registra un nuevo usuario.
