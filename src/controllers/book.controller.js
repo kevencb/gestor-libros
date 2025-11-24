@@ -34,6 +34,7 @@ export const getBookById = async (req, res) => {
 // Crear libro (para pruebas)
 export const createBook = async (req, res) => {
   try {
+    console.log("Body recibido:", req.body);
     const newBook = await Book.create(req.body);
     res.status(201).json(newBook);
   } catch (error) {

@@ -4,7 +4,7 @@ import { getBooks, getRecommendedBooks, getBookById, createBook } from "../contr
 const router = express.Router();
 
 router.get("/", getBooks);
-router.get("/recomendados", getRecommendedBooks);
+router.get("/recommended", getRecommendedBooks);
 router.get("/:id", getBookById);
 router.post("/", createBook);  // Solo para pruebas, luego lo protegemos
 
