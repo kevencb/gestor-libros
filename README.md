@@ -40,7 +40,7 @@ project/
 │── .env
 │── package.json
 └── README.md
-
+```
 ---
 
 ## 🛠 Variables de entorno
