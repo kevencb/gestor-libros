@@ -1,11 +1,11 @@
-# 📚 Books API – Backend en Node.js
+# Books API – Backend en Node.js
 
 API REST para la gestión de libros, desarrollada con **Node.js**, **Express** y **MongoDB**.  
 Incluye autenticación con JWT, CRUD de libros y un sistema de recomendados.
 
 ---
 
-## 🚀 Características
+## Características
 
 - Registro y login de usuarios mediante **JWT**
 - CRUD completo de libros
@@ -15,7 +15,7 @@ Incluye autenticación con JWT, CRUD de libros y un sistema de recomendados.
 
 ---
 
-## 🧱 Tecnologías utilizadas
+## Tecnologías utilizadas
 
 - Node.js  
 - Express  
@@ -26,7 +26,7 @@ Incluye autenticación con JWT, CRUD de libros y un sistema de recomendados.
 
 ---
 
-## 📁 Estructura del proyecto
+## Estructura del proyecto
 
 ```bash
 project/
@@ -43,7 +43,7 @@ project/
 ```
 ---
 
-## 🛠 Variables de entorno
+## Variables de entorno
 
 - Crear un archivo `.env` en la raíz:
 - PORT=4000
@@ -52,7 +52,7 @@ project/
 
 ---
 
-## 📘 Modelo Book (Schema)
+## Modelo Book (Schema)
 {
     title: String (required),
     author: String (required),
@@ -97,30 +97,30 @@ Devuelve un token JWT y los datos del usuario.
 
 ---
 
-# 📚 Rutas de Libros  
+# Rutas de Libros  
 Base: `/api/books`
 
-#### **POST /api/books**  
+### **POST /api/books**  
 Crear un libro.
 
-#### **GET /api/books**  
+### **GET /api/books**  
 Obtener todos los libros.
 
-#### **GET /api/books/:id**  
+### **GET /api/books/:id**  
 Obtener un libro por ID.
 
-#### **PUT /api/books/:id**  
+### **PUT /api/books/:id**  
 Actualizar un libro.
 
-#### **DELETE /api/books/:id**  
+### **DELETE /api/books/:id**  
 Eliminar un libro.
 
-#### **GET /api/books/recommended**  
+### **GET /api/books/recommended**  
 Obtener solo los libros recomendados.
 
 ---
 
-## ▶️ Ejecutar el proyecto
+## Ejecutar el proyecto
 
 Instalar dependencias:
 npm install
@@ -133,7 +133,7 @@ http://localhost:4000
 
 ---
 
-## 🎯 Notas finales
+## Notas finales
 
 - El backend está totalmente funcional y listo para conectarse con un frontend (ej. Angular).  
 - Sigue una arquitectura modular y buenas prácticas REST.  
