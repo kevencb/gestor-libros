@@ -65,18 +65,18 @@ project/
 
 ### Géneros permitidos:
 
-- Fantasy  
-- Sci-Fi  
-- Mystery  
-- Romance  
-- History  
-- Horror  
-- Young Adult  
-- Essay  
-- Poetry  
-- Adventure  
-- Drama  
-- Biography  
+- Fantasía"
+- Ciencia Ficción"
+- Misterio"
+- Romance"
+- Historia"
+- Terror"
+- Juvenil"
+- Ensayo"
+- Poesía"
+- Aventura"
+- Drama"
+- Biografía
 
 ---
 
