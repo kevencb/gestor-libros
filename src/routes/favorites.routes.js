@@ -4,7 +4,6 @@ import { addFavorite, getFavorites, removeFavorite } from "../controllers/favori
 
 const router = Router();
 
-// Todas requieren login
 router.post("/:bookId", authRequired, addFavorite);
 router.get("/", authRequired, getFavorites);
 router.delete("/:bookId", authRequired, removeFavorite);

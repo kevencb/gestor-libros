@@ -40,19 +40,17 @@ export const getFavorites = async (req, res) => {
 // Eliminar libro de favoritos
 export const removeFavorite = async (req, res) => {
   try {
-    const userId = req.user.id;
-    const bookId = req.params.bookId;
-
-    const user = await User.findById(userId);
+    const user = await User.findById(req.user.id);
 
     user.favorites = user.favorites.filter(
-      (fav) => fav.toString() !== bookId
+      (id) => id.toString() !== req.params.bookId
     );
 
     await user.save();
 
-    res.json({ msg: "Libro eliminado de favoritos" });
+    res.json({ msg: "Eliminado de favoritos" });
   } catch (error) {
+    console.error("ERROR ELIMINANDO FAVORITO:", error);
     res.status(500).json({ msg: "Error eliminando favorito" });
   }
 };

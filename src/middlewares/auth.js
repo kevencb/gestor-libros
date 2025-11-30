@@ -4,6 +4,8 @@ import dotenv from "dotenv";
 dotenv.config();
 
 export const authRequired = (req, res, next) => {
+  console.log("HEADER TOKEN RECIBIDO:", req.headers.authorization);
+
   const token = req.headers.authorization?.split(" ")[1];
 
   if (!token)
@@ -11,6 +13,7 @@ export const authRequired = (req, res, next) => {
 
   try {
     const payload = jwt.verify(token, process.env.JWT_SECRET);
+    console.log("PAYLOAD DECODIFICADO:", payload);
     req.user = payload;
     next();
 

@@ -1,11 +1,17 @@
 import express from "express";
-import { getBooks, getRecommendedBooks, getBookById, createBook } from "../controllers/book.controller.js";
+import { getBooks, getRecommendedBooks, getBookById, createBook, updateBook, deleteBook } from "../controllers/book.controller.js";
+import { authRequired } from "../middlewares/auth.js";
 
 const router = express.Router();
 
 router.get("/", getBooks);
 router.get("/recommended", getRecommendedBooks);
 router.get("/:id", getBookById);
-router.post("/", createBook);  // Solo para pruebas, luego lo protegemos
+
+router.post("/", authRequired, createBook);
+router.put("/:id", authRequired, updateBook);
+router.delete("/:id", authRequired, deleteBook);
+
+router.post("/", authRequired, createBook);
 
 export default router;

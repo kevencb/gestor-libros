@@ -36,7 +36,7 @@ const bookSchema = new mongoose.Schema(
       trim: true
     },
     cover: {
-      type: String, // image URL
+      type: String,
       default: ""
     },
     publicationDate: {
